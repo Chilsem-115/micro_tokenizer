@@ -88,7 +88,6 @@ void                create_token(t_tokenizer_state *ctx, char *line);
 
 /* Quote handling */
 int                 quote_handler(t_tokenizer_state *ctx, char *line);
-void                handle_quote(t_tokenizer_state *ctx, char *line, char quote);
 
 /* Operator handling */
 int		operator_handler(t_tokenizer_state *ctx, char *line);

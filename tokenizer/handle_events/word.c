@@ -64,23 +64,3 @@ int	operator_handler(t_tokenizer_state *ctx, char *line)
 		return (1);
 	return (0);
 }
-
-int	quote_handler(t_tokenizer_state *ctx, char *line)
-{
-	char	c;
-
-	c = line[ctx->pos];
-	if (c == '\'')
-	{
-		ctx->current.type = TOK_SQUOTE;
-		handle_quote(ctx, line, c);
-		return (1);
-	}
-	else if (c == '"')
-	{
-		ctx->current.type = TOK_DQUOTE;
-		handle_quote(ctx, line, c);
-		return (1);
-	}
-	return (0);
-}
