@@ -29,21 +29,27 @@ It avoids dynamic memory allocation and heavy dependencies, making it ideal for 
 
 ## 📦 Project Structure
 
-* `main/`
+```
+micro_tokenizer/
+├── Makefile
+├── local_lib/
+└── main/
+    ├── messh.c
+    ├── messh.h
+    ├── ast_generator/
+    ├── execution/
+    └── tokenizer/
+        ├── tokenize.c
+        ├── tokenize.h
+        └── handle_events/
+            ├── control.c
+            ├── quote.c
+            ├── redirect.c
+            ├── word.c
+            └── errors/
+                └── err_handler.c
+```
 
-  * `messh.c`: main shell logic (example)
-  * `messh.h`: global shell header
-  * `tokenizer/`
-
-    * `tokenize.c`: core tokenizer loop
-    * `tokenize.h`: tokenizer types and prototypes
-    * `handle_events/`
-
-      * `word.c`: word parsing
-      * `quote.c`: quote handling
-      * `redirect.c`: redirection token parsing
-      * `control.c`: pipes and logical operators
-      * `errors/err_handler.c`: error reporting
 * `local_lib/`: optional libraries (optional)
 * `Makefile`: build system for the shell/tokenizer
 
