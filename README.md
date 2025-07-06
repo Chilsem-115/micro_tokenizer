@@ -42,9 +42,6 @@ tokenizer/
                 └── err_handler.c
 ```
 
-* `local_lib/`: optional libraries (optional)
-* `Makefile`: build system for the shell/tokenizer
-
 ---
 
 ## 🚀 Usage
