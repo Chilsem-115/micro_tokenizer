@@ -30,15 +30,7 @@ It avoids dynamic memory allocation and heavy dependencies, making it ideal for 
 ## 📦 Project Structure
 
 ```
-micro_tokenizer/
-├── Makefile
-├── local_lib/
-└── main/
-    ├── messh.c
-    ├── messh.h
-    ├── ast_generator/
-    ├── execution/
-    └── tokenizer/
+tokenizer/
         ├── tokenize.c
         ├── tokenize.h
         └── handle_events/
