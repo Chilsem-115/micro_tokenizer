@@ -98,7 +98,10 @@ int		dispatch_redirections(t_tokenizer_state *ctx, char *line);
 /* Word handling */
 int                 word_handler(t_tokenizer_state *ctx, char *line);
 
-int	emit_token(t_tokenizer_state *ctx, char *line, t_tokentype type, int length);
-int	env_handler(t_tokenizer_state *ctx, char *line);
+/* Environment vars handling */
+int		env_handler(t_tokenizer_state *ctx, char *line);
+
+/* Token emission*/
+int		emit_token(t_tokenizer_state *ctx, char *line, t_tokentype type, int length);
 
 #endif
